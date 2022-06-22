@@ -23,7 +23,7 @@ const randomTopicList = (n) => {
     return topicList;
 }
 
-const randomPlaylistList = (topicList, numberOfPlaylists) => {
+const randomPlaylist = (topicList, numberOfPlaylists) => {
     if (numberOfPlaylists <= 0) return [];
     const playlistList = []
 
@@ -75,9 +75,9 @@ const randomSongList = (playlistList, numberOfSongs) => {
 
 (() => {
     // random data
-    const topicList = randomTopicList(4)
-    const playlistList = randomPlaylistList(topicList, 5)
-    const songList = randomSongList(playlistList, 5)
+    const topicList = randomTopicList(7)
+    const playlistList = randomPlaylist(topicList, 5)
+    const songList = randomSongList(playlistList, 30)
 
     // prepare db object
     const db = {
