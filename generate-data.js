@@ -35,7 +35,7 @@ const randomPlaylistList = (topicList, numberOfPlaylists) => {
                 id: faker.datatype.uuid(),
                 name: faker.lorem.words(),
                 sub: faker.lorem.sentence(),
-                image: faker.image.imageUrl(300, 300),
+                img: faker.image.imageUrl(300, 300),
                 createdAt: Date.now(),
                 updatedAt: Date.now()
             }
