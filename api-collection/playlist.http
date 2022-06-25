@@ -1,5 +1,5 @@
 @baseUrl=http://localhost:3001/api
-@resourceName=playlist
+@resourceName=song
 
 #playlist
 
@@ -24,11 +24,11 @@ Content-Type: application/json
 ###
 
 # @name update
-PATCH {{baseUrl}}/{{resourceName}}/2
+PATCH {{baseUrl}}/{{resourceName}}/720b2249-02ec-498e-a7a1-3332673e1434
 Content-Type: application/json
 
 {
-  "name": "New Laptop"
+  "liked": true
 }
 
 ###
