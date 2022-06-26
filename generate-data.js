@@ -61,7 +61,11 @@ const randomSongList = (playlistList, numberOfSongs) => {
                 album: faker.music.songName(),
                 liked: faker.datatype.boolean(),
                 img: faker.image.imageUrl(64, 64),
-                songUrl: 'mp3 link',
+                songUrl: faker.helpers.arrayElement([
+                    'https://vnso-zn-16-tf-mp3-s1-zmp3.zmdcdn.me/397dfae855a9bcf7e5b8/3316510322627274731?authen=exp=1656396063~acl=/397dfae855a9bcf7e5b8/*~hmac=802ff53522f3b10ae9790b2b53e6286a&fs=MTY1NjIyMzI2Mzg4NXx3ZWJWNnwxMDUwNjU5MjQ0fDExOC43MC4xNC4yNDA',
+                    'https://vnso-zn-23-tf-mp3-s1-zmp3.zmdcdn.me/1c5fc9a67ae793b9caf6/8696983054732805962?authen=exp=1656396393~acl=/1c5fc9a67ae793b9caf6/*~hmac=7acd454ea557bb6b16d4ab00d17bcebe&fs=MTY1NjIyMzU5MzI1OXx3ZWJWNnwwfDE0LjE2NS4yMjmUsICdUngMjM1',
+                    'https://vnso-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/a0f02cfa7dbb94e5cdaa/5159577349354650802?authen=exp=1656396623~acl=/a0f02cfa7dbb94e5cdaa/*~hmac=aca46392c7ee97c9400be78e39cfddeb&fs=MTY1NjIyMzgyMzY0N3x3ZWJWNnwwfDE0LjE2NC4yMjUdUngNzI'
+                ]),
                 createdAt: Date.now(),
                 updatedAt: Date.now()
             }
