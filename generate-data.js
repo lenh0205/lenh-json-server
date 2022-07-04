@@ -63,13 +63,12 @@ const randomSongList = (playlistList, numberOfSongs) => {
                 liked: faker.datatype.boolean(),
                 img: faker.image.imageUrl(64, 64),
                 songUrl: faker.helpers.arrayElement([
-                    'https://vnso-zn-16-tf-mp3-s1-zmp3.zmdcdn.me/397dfae855a9bcf7e5b8/3316510322627274731?authen=exp=1656396063~acl=/397dfae855a9bcf7e5b8/*~hmac=802ff53522f3b10ae9790b2b53e6286a&fs=MTY1NjIyMzI2Mzg4NXx3ZWJWNnwxMDUwNjU5MjQ0fDExOC43MC4xNC4yNDA',
-                    'https://vnso-zn-23-tf-mp3-s1-zmp3.zmdcdn.me/1c5fc9a67ae793b9caf6/8696983054732805962?authen=exp=1656396393~acl=/1c5fc9a67ae793b9caf6/*~hmac=7acd454ea557bb6b16d4ab00d17bcebe&fs=MTY1NjIyMzU5MzI1OXx3ZWJWNnwwfDE0LjE2NS4yMjmUsICdUngMjM1',
-                    'https://vnso-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/a0f02cfa7dbb94e5cdaa/5159577349354650802?authen=exp=1656396623~acl=/a0f02cfa7dbb94e5cdaa/*~hmac=aca46392c7ee97c9400be78e39cfddeb&fs=MTY1NjIyMzgyMzY0N3x3ZWJWNnwwfDE0LjE2NC4yMjUdUngNzI',
-                    'https://vnso-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/3f23f3549e15774b2e04/3291725272894183767?authen=exp=1656476470~acl=/3f23f3549e15774b2e04/*~hmac=093b1c95a85fd886e9b432f04c17049b&fs=MTY1NjMwMzY3MDg0N3x3ZWJWNnwwfDE0LjE2NC4yMjUdUngNzI',
-                    'https://vnso-zn-23-tf-mp3-s1-zmp3.zmdcdn.me/fb400d3760768928d067/5668674868526934830?authen=exp=1656476455~acl=/fb400d3760768928d067/*~hmac=aebafed649c395e81e1c449d85981826&fs=MTY1NjMwMzY1NTgwNnx3ZWJWNnwwfDE0LjE2NC4yMjUdUngNzI',
-                    'https://vnso-zn-16-tf-mp3-s1-zmp3.zmdcdn.me/6660bd17d05639086047/6500702918192854609?authen=exp=1656475957~acl=/6660bd17d05639086047/*~hmac=3e72ae977ab9d965240d7805f3af0841&fs=MTY1NjMwMzE1NzM1Nnx3ZWJWNnwwfDU4LjE4Ny4xNjMdUngMjI'
-                ]),
+                    "https://vnso-zn-10-tf-mp3-s1-zmp3.zmdcdn.me/338062602221cb7f9230/8265150326533553135?authen=exp=1657121123~acl=/338062602221cb7f9230/*~hmac=73dcdc200202f9c5d7ed776ccea2d34e&fs=MTY1Njk0ODMyMzg4N3x3ZWJWNnwwfDEyMy4yMy40MS4yMTg",
+                    "https://vnso-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/e59a85ab58eab1b4e8fb/5138068280272187474?authen=exp=1657121036~acl=/e59a85ab58eab1b4e8fb/*~hmac=c9756adff411d215c8cc319c49f15d38&fs=MTY1Njk0ODIzNjY2NHx3ZWJWNnwwfDE0LjE3MC4xNTkdUngMTM",
+                    "https://vnso-zn-16-tf-mp3-s1-zmp3.zmdcdn.me/205ac2fb5bbab2e4ebab/686030266420867194?authen=exp=1657120950~acl=/205ac2fb5bbab2e4ebab/*~hmac=3b8796d79d7e73824022df1d27219f86&fs=MTY1Njk0ODE1MDgwMnx3ZWJWNnwwfDI3LjMdUngMTIxLjI1Mg",
+                    "https://vnso-zn-5-tf-mp3-s1-zmp3.zmdcdn.me/eab0b5bc4efda7a3feec/2139479485954101043?authen=exp=1657120877~acl=/eab0b5bc4efda7a3feec/*~hmac=88f2cbf35b37a1f68db43895d54e3785&fs=MTY1Njk0ODA3NzA5MHx3ZWJWNnwwfDI3LjMdUngMTIxLjI1Mg",
+                    "https://vnso-zn-16-tf-mp3-s1-zmp3.zmdcdn.me/397dfae855a9bcf7e5b8/3316510322627274731?authen=exp=1657120962~acl=/397dfae855a9bcf7e5b8/*~hmac=408a7d8d3341e7119024d55b7ffd1dbc&fs=MTY1Njk0ODE2MjkyNHx3ZWJWNnwxMDMzNTM4OTA5fDExNy41LjE0Ni4xNzA"
+                   ]),
                 createdAt: Date.now(),
                 updatedAt: Date.now()
             }
