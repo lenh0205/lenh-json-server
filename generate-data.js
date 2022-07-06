@@ -79,19 +79,39 @@ const randomSongList = (playlistList, numberOfSongs) => {
     return songList
 }
 
+const randomCreatedPlaylistList = (n) => {
+        if (n <= 0) return []
+
+        const createdPlaylistList = []
+        // loop and push category
+        Array.from(new Array(n)).forEach(() => {
+            const createdPlaylist = {
+                id: faker.datatype.uuid(),
+                name: "",
+                sub: "",
+                createdAt: Date.now(),
+                updatedAt: Date.now()
+            }
+            createdPlaylistList.push(createdPlaylist)
+        })
+    
+        return createdPlaylistList;
+}
+
 
 (() => {
     // random data
     const topicList = randomTopicList(7)
     const playlistList = randomPlaylist(topicList, 5)
     const songList = randomSongList(playlistList, 30)
+    const createdPlaylistList = randomCreatedPlaylistList(0)
 
     // prepare db object
     const db = {
         topic: topicList,
         playlist: playlistList,
         song: songList,
-        createdplaylist: []
+        createdplaylist: createdPlaylistList
     }
 
     // Write db object to db.json
