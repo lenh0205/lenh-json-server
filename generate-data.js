@@ -91,6 +91,7 @@ const randomSongList = (playlistList, numberOfSongs) => {
         topic: topicList,
         playlist: playlistList,
         song: songList,
+        createdplaylist: []
     }
 
     // Write db object to db.json
