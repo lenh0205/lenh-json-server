@@ -13,6 +13,11 @@ GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=20
 
 ###
 
+# @name seachAllRelated
+GET {{baseUrl}}/{{resourceName}}?name_like=Rag
+
+###
+
 # @name addNew
 POST {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
